@@ -15,3 +15,11 @@ ifeq ($(PROJECT), msm8952-secondary)
 DTBS += \
 	$(LOCAL_DIR)/msm8940-xiaomi-santoni.dtb
 endif
+ifeq ($(PROJECT), msm8937-secondary)
+DTBS += \
+	$(LOCAL_DIR)/msm8937-nokia-nd1.dtb
+endif
+ifeq ($(PROJECT), msm8917-secondary)
+DTBS += \
+	$(LOCAL_DIR)/msm8917-samsung-r06.dtb
+endif
