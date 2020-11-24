@@ -6,11 +6,11 @@
 
 / {
 	// This is used by the bootloader to find the correct DTB 
-	qcom,msm-id = <313 0x0>;
+	qcom,msm-id = <303 0x0>;
 	qcom,board-id = <0x08 0>;
 
-	model = "Xiaomi Redmi Note 5A / Y1 Prime (ugg)";
-	compatible = "xiaomi,ugg", "qcom,msm8940", "lk2nd,device";
+	model = "Xiaomi Redmi Note 5A / Y1 Lite (ugglite)";
+	compatible = "xiaomi,ugglite", "qcom,msm8917", "lk2nd,device";
 
 	// Bootloader won't continue if it can't delete some nodes from below
 	soc {
