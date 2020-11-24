@@ -14,6 +14,7 @@ and then loaded by lk2nd.
 
 ## Supported SoCs
 - MSM8916
+- MSM8917
 - MSM8953 (SDM450,SDM625)
 - MSM8952 (MSM8940)
 
@@ -29,6 +30,8 @@ and then loaded by lk2nd.
 - Samsung Galaxy A6+ (2018) - SM-A605FN
 - Xiaomi Redmi 4X - santoni
 - Xiaomi Redmi Note 4X Snapdragon - mido
+- Xiaomi Redmi Note Note 5A / Y1 Lite - ugglite
+- Xiaomi Redmi Note Note 5A / Y1 Prime - ugg
 
 ## Installation
 1. Download `lk2nd.img` (available in [Releases](https://github.com/msm8916-mainline/lk2nd/releases)(MSM8916))
