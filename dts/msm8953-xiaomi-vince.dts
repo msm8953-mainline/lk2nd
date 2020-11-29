@@ -1,0 +1,74 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+
+/ {
+	// This is used by the bootloader to find the correct DTB 
+	qcom,msm-id = <293 0x0>;
+	qcom,board-id= <0x1000b 0x8>;
+
+	model = "Xiaomi Redmi Note 5 / 5 Plus Snapdragon (vince)";
+	compatible = "xiaomi,vince", "qcom,msm8953", "lk2nd,device";
+
+	// Bootloader won't continue if it can't delete some nodes from below
+	soc {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges = <0x0 0x0 0x0 0xffffffff>;
+	};
+
+	/* This enables graphical output via bootloader-enabled display */
+	chosen {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+
+		splash_region@90001000 {
+			reg = <0x0 0x90001000 0x0 0x13ff000>;
+			status= "okay";
+		};
+	};
+
+	reserved-memory {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+
+		/delete-node/other_ext_region@85b00000;
+		/delete-node/other_ext_region@86400000;
+		other_ext_mem: other_ext_region@84a00000 {
+			no-map;
+			reg = <0x0 0x84a00000 0x0 0x1e00000>;
+		};
+
+		modem_mem: modem_region@86c00000 {
+			no-map;
+			reg = <0x00 0x86c00000 0x00 0x6a00000>;
+		};		
+
+		adsp_fw_mem: adsp_fw_region@8d600000 {
+			reg = <0x0 0x8d600000 0x0 0x1200000>;
+		};
+
+		dfps_data_mem@90000000 {
+			no-map;
+			reg = <0x00 0x90000000 0x00 0x1000>;
+			status = "disabled";
+		};
+
+		/delete-node/wcnss_fw_region@8e700000;
+		wcnss_fw_mem: wcnss_fw_region@8e800000 {
+			reg = <0x0 0x8e800000 0x0 0x700000>;
+		};
+
+		ramoops@9ff00000 {
+			compatible = "ramoops";
+			no-map;
+			reg = <0x0 0x9ff00000 0x0 0x00100000>;
+			console-size = <0x1000>;
+			record-size = <0x1000>;
+		};
+	};
+};
