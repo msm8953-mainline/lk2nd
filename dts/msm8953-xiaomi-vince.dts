@@ -11,7 +11,7 @@
 
 	model = "Xiaomi Redmi Note 5 / 5 Plus Snapdragon (vince)";
 	compatible = "xiaomi,vince", "qcom,msm8953", "lk2nd,device";
-
+	lk2nd,pstore = <0x9ff00000 0x100000>;
 	// Bootloader won't continue if it can't delete some nodes from below
 	soc {
 		#address-cells = <1>;
@@ -66,9 +66,11 @@
 		ramoops@9ff00000 {
 			compatible = "ramoops";
 			no-map;
-			reg = <0x0 0x9ff00000 0x0 0x00100000>;
-			console-size = <0x1000>;
+			reg = <0x0 0x9ff00000 0x0 0x100000>;
 			record-size = <0x1000>;
+			console-size = <0x1000>;
+			ftrace-size = <0x1000>;
+			pmsg-size = <0x1000>;
 		};
 	};
 };
