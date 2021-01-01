@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+/include/ "msm8937.dtsi"
+
+/ {
+	// This is used by the bootloader to find the correct DTB 
+	qcom,msm-id = <0x126 0x00>;
+	qcom,board-id= <0x08 0x00>;
+
+	model = "Asus Zenfone Max M1(X00P)";
+	compatible = "asus,x00p", "qcom,msm8937-mtp", "qcom,msm8937", "qcom,mtp", "lk2nd,device";
+
+	// Bootloader won't continue if it can't delete some nodes from below
+	soc {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges = <0x0 0x0 0x0 0xffffffff>;
+
+	};
+
+};

@@ -17,5 +17,6 @@ DTBS += \
 endif
 ifeq ($(PROJECT), msm8952-secondary)
 DTBS += \
+	$(LOCAL_DIR)/msm8937-asus-x00p.dtb \
 	$(LOCAL_DIR)/msm8940-xiaomi-santoni.dtb
 endif
