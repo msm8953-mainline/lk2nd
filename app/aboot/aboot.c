@@ -2691,11 +2691,6 @@ void cmd_boot(const char *arg, void *data, unsigned sz)
 	unsigned int kernel_size = 0;
 	unsigned int scratch_offset = 0;
 
-#if FBCON_DISPLAY_MSG
-	/* Exit keys' detection thread firstly */
-	exit_menu_keys_detection();
-#endif
-
 	if(!is_cmd_fastboot_allowed(arg, CMD_BOOT))
 	{
 		fastboot_fail("unlock device to use this command");
@@ -2912,12 +2907,6 @@ void cmd_boot(const char *arg, void *data, unsigned sz)
 		   (void*) hdr->ramdisk_addr, hdr->ramdisk_size);
 
 	/* fastboot already stop, it's no need to show fastboot menu */
-	return;
-boot_failed:
-#if FBCON_DISPLAY_MSG
-	/* revert to fastboot menu if boot failed */
-	display_fastboot_menu();
-#endif
 	return;
 }
 
