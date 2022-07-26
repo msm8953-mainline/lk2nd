@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+/include/ "msm8952.dtsi"
+
+/ {
+	// This is used by the bootloader to find the correct DTB
+	qcom,msm-id = <294 0>;
+	qcom,board-id = <0x42 0x8500>;
+
+	model = "Motorola Moto G5";
+	compatible = "motorola,cedric", "qcom,msm8937", "lk2nd,device";
+};

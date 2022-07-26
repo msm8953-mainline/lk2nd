@@ -10,7 +10,7 @@ The real Android boot image is placed into the boot partition with 1 MB offset,
 and then loaded by lk2nd.
 
 ## Supported SoCs
-- MSM8952 (MSM8940)
+- MSM8952 (MSM8940, MSM8937)
 - MSM8953 (SDM450,SDM625,SDM626)
 - SDM632
 
@@ -28,6 +28,7 @@ and then loaded by lk2nd.
 - Xiaomi Redmi Note 4X Snapdragon - mido
 - Xiaomi Redmi Note 5 / 5 Plus Snapdragon - vince
 - Meizu M6 Note - m1721
+- Motorola Moto G5 - cedric
 - Motorola Moto G7 Power - ocean
 - Xiaomi Mi A2 Lite - daisy
 - Xiaomi Mi A1 - tissot
