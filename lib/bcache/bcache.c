@@ -63,7 +63,11 @@ bcache_t bcache_create(bdev_t *dev, size_t block_size, int block_count)
 	struct bcache *cache;
 
 	cache = malloc(sizeof(struct bcache));
-	
+
+	ASSERT((block_size % CACHE_LINE) == 0);
+
+	uint8_t *data_bufs = (uint8_t *)memalign(CACHE_LINE, ROUNDUP(block_size * block_count, CACHE_LINE));
+
 	cache->dev = dev;
 	cache->block_size = block_size;
 	cache->count = block_count;
@@ -77,7 +81,7 @@ bcache_t bcache_create(bdev_t *dev, size_t block_size, int block_count)
 	for (i=0; i < block_count; i++) {
 		cache->blocks[i].ref_count = 0;
 		cache->blocks[i].is_dirty = false;
-		cache->blocks[i].ptr = malloc(block_size);
+		cache->blocks[i].ptr = (void *) (data_bufs + i * block_size);
 		// add to the free list
 		list_add_head(&cache->free_list, &cache->blocks[i].node);	
 	}
@@ -114,8 +118,8 @@ void bcache_destroy(bcache_t _cache)
 			printf("warning: freeing dirty block %u\n",
 				cache->blocks[i].blocknum);
 
-		free(cache->blocks[i].ptr);
 	}
+	free(cache->blocks[0].ptr);
 
 	free(cache);
 }
