@@ -23,9 +23,10 @@ and then loaded by lk2nd.
 - Samsung Galaxy Tab A 8.0 LTE (2015) - SM-T357W
 - Samsung Galaxy Tab A 9.7 WiFi (2015) - SM-T550
 - Wileyfox Swift
+- Samsung Galaxy J8 (2018) - SM-J810M
 - Samsung Galaxy A6+ (2018) - SM-A605FN
 - Xiaomi Redmi 4X - santoni
-- Xiaomi Redmi Note 4X Snapdragon - mido
+- Redmi Note 4X Snapdragon - mido
 - Xiaomi Redmi Note 5 / 5 Plus Snapdragon - vince
 - Meizu M6 Note - m1721
 - Motorola Moto G7 Power - ocean
