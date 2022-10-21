@@ -1,0 +1,36 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+
+/ {
+	model = "Motorola Moto G6 (ali)";
+	compatible = "motorola,ali", "qcom,sdm450", "lk2nd,device";
+	qcom,msm-id = <0x152 0x00>;
+	qcom,board-id = <0x41 0xb1a0>,
+		<0x42 0xb1a0>,
+		<0x42 0xb1b0>,
+		<0x42 0xb200>,
+		<0x43 0xb200>,
+		<0x43 0xc100>,
+		<0x43 0xc200>,
+		<0x44 0xc200>;
+	lk2nd,pstore = <0xef000000 0xC0000>;
+
+	panel {
+		compatible = "motorola,ali-panel";
+
+		qcom,mdss_dsi_mot_auo_565_1080p_vid_v0 {
+			compatible = "motorola,ali-panel-auo";
+		};
+
+		qcom,mdss_dsi_mot_boe_565_1080p_vid_v0 {
+			compatible = "motorola,ali-panel-boe";
+		};
+
+		qcom,mdss_dsi_mot_tianma_565_1080p_vid_v0 {
+			compatible = "motorola,ali-panel-tianma";
+		};
+	};
+};

@@ -9,3 +9,10 @@ jobs:
       platform: msm8953-secondary
       artifacts: |
         build-*/lk2nd.img
+  lk2nd-motorola-ali:
+    name: lk2nd
+    uses: ./.github/workflows/lk2nd.yml
+    with:
+      platform: motorola-ali-secondary
+      artifacts: |
+        build-*/lk2nd.img
