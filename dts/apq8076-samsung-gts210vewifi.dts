@@ -1,0 +1,87 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+/include/ "msm8952.dtsi"
+
+/ {
+	// This is used by the bootloader to find the correct DTB
+	qcom,msm-id = <0x115 0x01>;
+	qcom,board-id = <0x08 0x04>;
+	/*
+	* To build for samsung-gts210vewifi, comment out all dtbs and add
+	* $(LOCAL_DIR)/apq8076-samsung-gts210vewifi.dtb to rules.mk in this directory.
+	* samsung-gts210vewifi does not work with all dtbs enabled.
+	 */
+	gts210vewifi{
+
+		model = "Samsung GTS210VEWIFI EUR OPEN PROJECT Rev04";
+		compatible = "samsung,gts210vewifi",
+		             "qcom,apq8076",
+		             "qcom,msm8952",
+		             "lk2nd,device";
+		// lk2nd,match-cmdline = "* mdss_mdp.panel=1: dsi: 0: ss_dsi_panel_ANA38401_AMS968HH01_QXGA: 1: ss_dsi_panel_ANA38";
+		lk2nd,match-bootloader = "T813*";
+
+	};
+
+	// Bootloader won't continue if it can't delete some nodes from below
+	soc {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges = <0x0 0x0 0x0 0xffffffff>;
+
+		qcom,memshare {
+			compatible = "qcom,memshare";
+
+			qcom,client_1 {
+				compatible = "qcom,memshare-peripheral";
+				qcom,peripheral-size = <0x200000>;
+				qcom,client-id = <0x00>;
+				qcom,allocate-boot-time;
+				label = "modem";
+			};
+
+			qcom,client_2 {
+				compatible = "qcom,memshare-peripheral";
+				qcom,peripheral-size = <0x300000>;
+				qcom,client-id = <0x02>;
+				label = "modem";
+			};
+
+			qcom,client_3 {
+				compatible = "qcom,memshare-peripheral";
+				qcom,peripheral-size = <0x00>;
+				qcom,client-id = <0x01>;
+				label = "modem";
+			};
+		};
+	};
+
+	reserved-memory {
+
+		lk_region@0 {
+			linux,reserve-contiguous-region;
+			linux,reserve-region;
+			linux,remove-completely;
+			reg = <0x00 0x8f600000 0x00 0x300000>;
+			label = "lk_mem";
+		};
+
+		secdbg_region@0 {
+			linux,reserve-contiguous-region;
+			linux,reserve-region;
+			linux,remove-completely;
+			reg = <0x00 0xa0000000 0x00 0x800000>;
+			label = "secdbg_mem";
+		};
+
+		klog_region@0 {
+			linux,reserve-contiguous-region;
+			linux,reserve-region;
+			linux,remove-completely;
+			reg = <0x00 0xa01ff000 0x00 0x201000>;
+			label = "klog_mem";
+		};
+	};
+};

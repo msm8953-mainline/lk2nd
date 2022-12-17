@@ -20,7 +20,8 @@ endif
 ifeq ($(PROJECT), msm8952-secondary)
 DTBS += \
 	$(LOCAL_DIR)/msm8940-xiaomi-santoni.dtb \
-	$(LOCAL_DIR)/msm8940-xiaomi-ugg.dtb
+	$(LOCAL_DIR)/msm8940-xiaomi-ugg.dtb \
+	$(LOCAL_DIR)/apq8076-samsung-gts210vewifi.dtb
 endif
 ifeq ($(PROJECT), msm8917-secondary)
 DTBS += \

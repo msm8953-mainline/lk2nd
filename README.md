@@ -10,7 +10,7 @@ The real Android boot image is placed into the boot partition with 1 MB offset,
 and then loaded by lk2nd.
 
 ## Supported SoCs
-- MSM8952 (MSM8940)
+- MSM8952 (MSM8940,APQ8076)
 - MSM8953 (SDM450,SDM625,SDM626)
 - SDM632
 
@@ -33,6 +33,7 @@ and then loaded by lk2nd.
 - Xiaomi Mi A2 Lite - daisy
 - Xiaomi Mi A1 - tissot
 - XIaomi Mi A2 Lite - daisy
+- Samsung Galaxy Tab S2 9.7 Wifi - SM-T813 (quirky - see comment in dts/apq8076-samsung-gts210vewifi.dts)
 
 ## Installation
 1. Download `lk2nd.img` (as of now there's no build available so you'll need to build it yourself.)
