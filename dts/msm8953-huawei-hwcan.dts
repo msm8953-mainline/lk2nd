@@ -1,0 +1,12 @@
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+/include/ "motorola-carrier-channel-ids.dtsi"
+
+/ {
+	model = "Huawei Nova Plus";
+	compatible = "huawei,hwcan", "qcom,msm8953", "lk2nd,device";
+
+	qcom,msm-id = <293 0>;
+	qcom,board-id = <8017 0>;
+};
