@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// Copyright (C) 2020 - Dreemurrs Embedded Labs
+
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+
+/ {
+	// This is used by the bootloader to find the correct DTB 
+	qcom,msm-id = <0x15d 0x00>;
+	qcom,board-id = <0xb 3>;
+
+	model = "Xiaomi Redmi 7 (onclite)";
+	compatible = "xiaomi,onclite", "qcom,msm8953", "lk2nd,device";
+};
