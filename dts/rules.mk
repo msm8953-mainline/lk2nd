@@ -12,6 +12,7 @@ DTBS += \
 	$(LOCAL_DIR)/msm8953-xiaomi-common.dtb \
 	$(LOCAL_DIR)/sdm632-fairphone-fp3.dtb \
 	$(LOCAL_DIR)/sdm632-motorola-ocean.dtb \
+	$(LOCAL_DIR)/sdm532-xioami-onclite.dtb \
 	$(LOCAL_DIR)/msm8953-xiaomi-daisy.dtb \
 	$(LOCAL_DIR)/msm8953-xiaomi-vince.dtb \
 	$(LOCAL_DIR)/msm8953-meizu-m1721.dtb \
