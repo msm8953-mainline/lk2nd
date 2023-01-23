@@ -7,7 +7,7 @@
 
 / {
 	// This is used by the bootloader to find the correct DTB 
-	qcom,msm-id = <0x15d 0x00>;
+	qcom,msm-id = <338 0x0>;
 	qcom,board-id = <0x2000b 0>;
 
 	model = "Lenovo Tab M10 (TB-X605F)";
