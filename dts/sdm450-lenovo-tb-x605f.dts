@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// Copyright (C) 2020 - Dreemurrs Embedded Labs
+
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+
+/ {
+	// This is used by the bootloader to find the correct DTB 
+	qcom,msm-id = <0x15d 0x00>;
+	qcom,board-id = <0x2000b 0>;
+
+	model = "Lenovo Tab M10 (TB-X605F)";
+	compatible = "lenovo,tb-x605f", "qcom,msm8953", "lk2nd,device";
+};
