@@ -20,6 +20,7 @@ and then loaded by lk2nd.
 - Samsung Galaxy A3 (2015) - SM-A300FU
 - Samsung Galaxy A5 (2015) - SM-A500FU
 - Samsung Galaxy J5 (2016) - SM-J510FN
+- Samsung Galaxy J8 (2018) - SM-J810M
 - Samsung Galaxy S4 Mini Value Edition - GT-I9195I
 - Samsung Galaxy Tab A 8.0 LTE (2015) - SM-T357W
 - Samsung Galaxy Tab A 9.7 WiFi (2015) - SM-T550
