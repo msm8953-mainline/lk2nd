@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+
+/ {
+	qcom,msm-id = <293 0x0>;
+	qcom,board-id= <26 0>;
+
+	model = "Xiaomi Mi Max 2";
+	compatible = "xiaomi,oxygen", "qcom,msm8953", "lk2nd,device";
+};
