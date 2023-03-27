@@ -25,7 +25,7 @@
 		compatible = "motorola,potter-panel";
 
 		qcom,mdss_dsi_mot_tianma_520_1080p_vid_v0 {
-			compatible = "tianma,tl052vdpx02";
+			compatible = "tianma,tl052vdxp02";
 		};
 		qcom,mdss_dsi_mot_boe_520_1080p_vid_v0 {
 			compatible = "boe,bs052fhm-a00-6c01";

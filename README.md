@@ -20,6 +20,7 @@ and then loaded by lk2nd.
 - Samsung Galaxy A3 (2015) - SM-A300FU
 - Samsung Galaxy A5 (2015) - SM-A500FU
 - Samsung Galaxy J5 (2016) - SM-J510FN
+- Samsung Galaxy J8 (2018) - SM-J810M
 - Samsung Galaxy S4 Mini Value Edition - GT-I9195I
 - Samsung Galaxy Tab A 8.0 LTE (2015) - SM-T357W
 - Samsung Galaxy Tab A 9.7 WiFi (2015) - SM-T550
@@ -27,12 +28,14 @@ and then loaded by lk2nd.
 - Samsung Galaxy A6+ (2018) - SM-A605FN
 - Xiaomi Redmi 4X - santoni
 - Xiaomi Redmi Note 4X Snapdragon - mido
+- Xiaomi Redmi 4 Prime - markw
 - Xiaomi Redmi Note 5 / 5 Plus Snapdragon - vince
 - Meizu M6 Note - m1721
 - Motorola Moto G7 Power - ocean
 - Xiaomi Mi A2 Lite - daisy
 - Xiaomi Mi A1 - tissot
 - XIaomi Mi A2 Lite - daisy
+- Samsung Galaxy Tab A2 XL WiFi (2018) - SM-T590
 
 ## Installation
 1. Download `lk2nd.img` (as of now there's no build available so you'll need to build it yourself.)
