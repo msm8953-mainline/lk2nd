@@ -475,6 +475,7 @@ void display_fastboot_menu_renew(struct select_msg_info *fastboot_msg_info)
 			msg_type = FBCON_COMMON_MSG;
 			break;
 	}
+	display_fbcon_menu_message("\n\n\n",FBCON_COMMON_MSG, common_factor, 0);
 	fbcon_draw_line(msg_type);
 	display_fbcon_menu_message(fastboot_option_menu[option_index],
 		msg_type, big_factor, 0);
