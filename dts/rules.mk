@@ -19,7 +19,8 @@ DTBS += \
 	$(LOCAL_DIR)/sdm450-samsung-r04.dtb \
 	$(LOCAL_DIR)/sdm450-samsung-r05.dtb \
 	$(LOCAL_DIR)/sdm632-fairphone-fp3.dtb \
-	$(LOCAL_DIR)/sdm632-motorola-ocean.dtb
+	$(LOCAL_DIR)/sdm632-motorola-ocean.dtb \
+	$(LOCAL_DIR)/sdm632-xiaomi-onclite.dtb
 endif
 ifeq ($(PROJECT), msm8952-secondary)
 DTBS += \

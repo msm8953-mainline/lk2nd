@@ -32,6 +32,7 @@ and then loaded by lk2nd.
 - Xiaomi Redmi Note 5 / 5 Plus Snapdragon - vince
 - Xiaomi Redmi S2 / Y2 - ysl
 - Xiaomi Redmi 6 Pro - sakura
+- Xiaomi Redmi 7 - onclite
 - Meizu M6 Note - m1721
 - Motorola Moto G7 Power - ocean
 - Xiaomi Mi A2 Lite - daisy
