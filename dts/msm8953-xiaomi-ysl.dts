@@ -11,7 +11,6 @@
 
 	model = "Xiaomi Redmi S2/Y2 (ysl)";
 	compatible = "xiaomi,ysl", "qcom,msm8953", "lk2nd,device";
-	lk2nd,pstore = <0x9ff00000 0x00100000>;
 
 	panel {
 		compatible = "xiaomi,ysl-panel";
