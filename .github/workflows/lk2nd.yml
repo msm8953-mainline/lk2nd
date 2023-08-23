@@ -1,0 +1,34 @@
+name: Build lk2nd
+on:
+  workflow_call:
+    inputs:
+      platform:
+        type: string
+        required: true
+      options:
+        type: string
+      artifacts:
+        type: string
+        required: true
+
+jobs:
+  build:
+    name: ${{ inputs.platform }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install additional build dependencies
+        run: sudo apt-get update -yqq && sudo apt-get install -yqq device-tree-compiler
+      - name: Install cross compiler
+        uses: carlosperate/arm-none-eabi-gcc-action@v1
+      - run: arm-none-eabi-gcc --version
+      - uses: actions/checkout@v3
+      - name: Build
+        run: git clean -dxf && make -j$(nproc) TOOLCHAIN_PREFIX=arm-none-eabi-
+             ${{ inputs.options }} ${{ inputs.platform }}
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ inputs.platform }}
+          path: ${{ inputs.artifacts }}
+    env:
+      LKLE_CFLAGS: -Werror
