@@ -29,7 +29,28 @@
 			};
 		};
 	};
-	
+
+	sakura {
+		/* Xiaomi Redmi 6 Pro (sakura) and Xiaomi Mi A2 Lite (daisy) are software compatible */
+		model = "Xiaomi Redmi 6 Pro";
+		compatible = "xiaomi,sakura", "qcom,msm8953", "lk2nd,device";
+		lk2nd,match-bootloader = "*DAISY*";
+		lk2nd,pstore = <0x9ff00000 0x100000>;
+
+		panel {
+			compatible = "xiaomi,daisy-panel";
+			qcom,mdss_dsi_ili7807_fhdplus_video {
+				compatible = "mdss,ili7807-fhdplus";
+			};
+			qcom,mdss_dsi_hx8399c_fhdplus_video {
+				compatible = "himax,hx8399c-fhdplus";
+			};
+			qcom,mdss_dsi_otm1911_fhdplus_video {
+				compatible = "mdss,otm1911-fhdplus";
+			};
+		};
+	};
+
 	mido {
 		model = "Xiaomi Redmi Note 4X Snapdragon (mido)";
 		compatible = "xiaomi,mido", "qcom,msm8953", "lk2nd,device";

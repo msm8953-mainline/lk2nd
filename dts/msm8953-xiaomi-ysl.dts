@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+
+/ {
+	// This is used by the bootloader to find the correct DTB
+	qcom,msm-id = <293 0>;
+	qcom,board-id = <8 0>;
+
+	model = "Xiaomi Redmi S2/Y2 (ysl)";
+	compatible = "xiaomi,ysl", "qcom,msm8953", "lk2nd,device";
+
+	panel {
+		compatible = "xiaomi,ysl-panel";
+
+		qcom,mdss_dsi_auo_hd720_video {
+			compatible = "xiaomi,ysl-ili7807d";
+		};
+		qcom,mdss_dsi_sc_ili9881c_hd720_video {
+			compatible = "xiaomi,ysl-ili9881c";
+		};
+		qcom,mdss_dsi_truly_hd720_video {
+			compatible = "xiaomi,ysl-hx8394f";
+		};
+	};
+};

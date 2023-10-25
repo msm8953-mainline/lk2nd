@@ -30,12 +30,15 @@ and then loaded by lk2nd.
 - Xiaomi Redmi Note 4X Snapdragon - mido
 - Xiaomi Redmi 4 Prime - markw
 - Xiaomi Redmi Note 5 / 5 Plus Snapdragon - vince
+- Xiaomi Redmi S2 / Y2 - ysl
+- Xiaomi Redmi 6 Pro - sakura
+- Xiaomi Redmi 7 - onclite
 - Meizu M6 Note - m1721
 - Motorola Moto G7 Power - ocean
 - Xiaomi Mi A2 Lite - daisy
 - Xiaomi Mi A1 - tissot
-- XIaomi Mi A2 Lite - daisy
 - Samsung Galaxy Tab A2 XL WiFi (2018) - SM-T590
+- Huawei Maimang 5 / Nova (Plus) / G9 (Plus) - milan
 
 ## Installation
 1. Download `lk2nd.img` (as of now there's no build available so you'll need to build it yourself.)

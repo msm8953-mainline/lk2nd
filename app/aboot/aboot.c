@@ -1325,17 +1325,19 @@ void boot_linux(void *kernel, unsigned *tags,
 
 	arch_disable_cache(UCACHE);
 
-#if ARM_WITH_MMU
-	arch_disable_mmu();
-#endif
 	bs_set_timestamp(BS_KERNEL_ENTRY);
 
 	if (IS_ARM64(kptr))
 		/* Jump to a 64bit kernel */
 		scm_elexec_call((paddr_t)kernel, tags_phys);
-	else
+	else {
+		#if ARM_WITH_MMU
+		arch_disable_mmu();
+		#endif
+
 		/* Jump to a 32bit kernel */
 		entry(0, machtype, (unsigned*)tags_phys);
+	}
 }
 
 /* Function to check if the memory address range falls within the aboot

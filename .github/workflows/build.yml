@@ -1,0 +1,11 @@
+name: Build
+on: [push, pull_request]
+
+jobs:
+  lk2nd-msm8953:
+    name: lk2nd
+    uses: ./.github/workflows/lk2nd.yml
+    with:
+      platform: msm8953-secondary
+      artifacts: |
+        build-*/lk2nd.img
