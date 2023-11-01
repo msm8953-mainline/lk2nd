@@ -1,0 +1,19 @@
+/dts-v1/;
+
+/include/ "msm8952.dtsi"
+
+/ {
+    compatible = "qcom,sdm439", "xiaomi,pine", "lk2nd,device";
+    model = "Xiaomi Redmi 7A";
+    qcom,msm-id = <353 0x00>;
+    qcom,board-id = <0xb 2>;
+
+    // Bootloader won't continue if it can't delete some nodes from below
+    soc {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        ranges = <0x0 0x0 0x0 0xffffffff>;
+    };
+
+    __symbols__ {};
+};
