@@ -17,9 +17,11 @@
 		compatible = "xiaomi,vince-panel";
 		qcom,mdss_dsi_td4310_fhdplus_video_e7 {
 			compatible = "xiaomi,td4310-fhdplus-e7";
+			touchscreen-compatible = "syna,rmi4-i2c";
 		};
 		qcom,mdss_dsi_td4310_fhdplus_video_e7_g55 {
 			compatible = "xiaomi,td4310-fhdplus-e7-g55";
+			touchscreen-compatible = "novatek,nt36525-i2c";
 		};
 		qcom,mdss_dsi_td4310_ebbg_fhdplus_video_e7 {
 			compatible = "xiaomi,td4310-ebbg-fhdplus-e7";
