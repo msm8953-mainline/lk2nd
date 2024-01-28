@@ -65,22 +65,32 @@
 
 			qcom,mdss_dsi_ili9885_boe_fhd_video {
 				compatible = "xiaomi,boe-ili9885";
+				touchscreen-compatible = "edt,edt-ft5406";
+				// touchscreen-compatible = "goodix,gt917d";
 			};
 
 			qcom,mdss_dsi_nt35532_fhd_video {
 				compatible = "xiaomi,nt35532";
+				touchscreen-compatible = "edt,edt-ft5406";
+				// touchscreen-compatible = "goodix,gt917d";
 			};
 
 			qcom,mdss_dsi_nt35596_tianma_fhd_video {
 				compatible = "xiaomi,tianma-nt35596";
+				touchscreen-compatible = "edt,edt-ft5406";
+				// touchscreen-compatible = "goodix,gt917d";
 			};
 
 			qcom,mdss_dsi_otm1911_fhd_video {
 				compatible = "xiaomi,otm1911";
+				touchscreen-compatible = "edt,edt-ft5406";
+				// touchscreen-compatible = "goodix,gt917d";
 			};
 
 			qcom,mdss_dsi_r63350_ebbg_fhd_video {
 				compatible = "xiaomi,ebbg-r63350";
+				touchscreen-compatible = "edt,edt-ft5406";
+				// touchscreen-compatible = "goodix,gt917d";
 			};
 		};
 	};
