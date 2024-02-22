@@ -19,31 +19,31 @@
 		compatible = "huawei,milan-panel";
 
 		qcom,mdss_dsi_boe_otm1906c_5p5_1080p_cmd {
-			compatible = "huawei,boe_otm1906c_5p5_1080p_cmd";
+			compatible = "huawei,milan-boe-otm1906c";
 		};
 		qcom,mdss_dsi_boe_td4322_5p5_1080p_cmd {
-			compatible = "huawei,boe_td4322_5p5_1080p_cmd";
+			compatible = "huawei,milan-boe-td4322";
 		};
 		qcom,mdss_dsi_boe_test1906c_5p5_1080p_cmd {
-			compatible = "huawei,boe_test1906c_5p5_1080p_cmd";
+			compatible = "huawei,milan-boe-test1906c";
 		};
 		qcom,mdss_dsi_ctc_nt35596s_5p5_1080p_video {
-			compatible = "huawei,ctc_nt35596s_5p5_1080p_video";
+			compatible = "huawei,milan-ctc-nt35596s";
 		};
 		qcom,mdss_dsi_ctc_otm1906c_5p5_1080p_cmd {
-			compatible = "huawei,ctc_otm1906c_5p5_1080p_cmd";
+			compatible = "huawei,milan-ctc-otm1906c";
 		};
 		qcom,mdss_dsi_jdi_r63452_5p5_1080p_cmd {
-			compatible = "huawei,jdi_r63452_5p5_1080p_cmd";
+			compatible = "huawei,milan-jdi-r63452";
 		};
 		qcom,mdss_dsi_tianma_fic8736_5p5_1080p_cmd {
-			compatible = "huawei,tianma_fic8736_5p5_1080p_cmd";
+			compatible = "huawei,milan-tianma-fic8736";
 		};
 		qcom,mdss_dsi_tianma_focal8716_5p5_1080p_video {
-			compatible = "huawei,tianma_focal8716_5p5_1080p_video";
+			compatible = "huawei,milan-tianma-focal8716";
 		};
 		qcom,mdss_dsi_tianma_otm1906c_5p5_1080p_cmd {
-			compatible = "huawei,tianma_otm1906c_5p5_1080p_cmd";
+			compatible = "huawei,milan-tianma-otm1906c";
 		};
 	};
 };
