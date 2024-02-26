@@ -14,6 +14,7 @@ DTBS += \
 	$(LOCAL_DIR)/msm8953-xiaomi-common.dtb \
 	$(LOCAL_DIR)/msm8953-xiaomi-daisy.dtb \
 	$(LOCAL_DIR)/msm8953-xiaomi-markw.dtb \
+	$(LOCAL_DIR)/msm8953-xiaomi-oxygen.dtb \
 	$(LOCAL_DIR)/msm8953-xiaomi-vince.dtb \
 	$(LOCAL_DIR)/msm8953-xiaomi-ysl.dtb \
 	$(LOCAL_DIR)/sdm450-samsung-r04.dtb \

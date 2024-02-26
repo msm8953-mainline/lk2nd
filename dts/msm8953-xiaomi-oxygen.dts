@@ -1,0 +1,29 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+
+/ {
+	// This is used by the bootloader to find the correct DTB
+	qcom,msm-id = <293 0>;
+	qcom,board-id = <26 0>;
+
+	model = "Xiaomi Mi Max 2 (oxygen)";
+	compatible = "xiaomi,oxygen", "qcom,msm8953", "lk2nd,device";
+
+	panel {
+		compatible = "xiaomi,oxygen-panel";
+
+		qcom,mdss_dsi_r69006_1080p_video {
+			compatible = "mdss,r69006";
+		};
+		qcom,mdss_dsi_tianma_r63350_1080p_video {
+			compatible = "mdss,tianma_r63350";
+			touchscreen-compatible = "ft,ft5x46";
+		};
+		qcom,mdss_dsi_auo_r61322_1080p_video {
+			compatible = "mdss,auo_r61322";
+		};
+	};
+};
