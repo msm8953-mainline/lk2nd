@@ -40,6 +40,7 @@ and then loaded by lk2nd.
 - Xiaomi Mi A1 - tissot
 - Samsung Galaxy Tab A2 XL WiFi (2018) - SM-T590
 - Huawei Maimang 5 / Nova (Plus) / G9 (Plus) - milan
+- Lenovo P2 - kuntao
 
 ## Installation
 1. Download `lk2nd.img` (as of now there's no build available so you'll need to build it yourself.)

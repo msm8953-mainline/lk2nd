@@ -1,0 +1,14 @@
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+
+/ {
+	#address-cells = <2>;
+	#size-cells = <2>;
+	qcom,msm-id = <0x125 0x00>;
+	qcom,board-id = <0x41 0x82b1 0x41 0x83b0>;
+
+	model = "Lenovo P2 (kuntao)";
+	compatible = "lenovo,kuntao", "qcom,msm8953", "lk2nd,device";
+	lk2nd,pstore = <0x8ee00000 0x80000>;
+};
