@@ -1,0 +1,27 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+
+/ {
+        qcom,board-id = <0x1000b 1>;
+        qcom,msm-id = <338 0x0>;
+
+        model = "Xiaomi Redmi 5 (rosy)";
+        compatible = "xiaomi,rosy", "qcom,msm8953", "lk2nd,device";
+
+	panel {
+		compatible = "xiaomi,rosy-panel";
+
+		qcom,mdss_dsi_ft8613_ebbg_5p7_720p_video {
+			compatible = "xiaomi,rosy-ft8613-ebbg";
+		};
+		qcom,mdss_dsi_ft8613_csot_5p7_720p_video {
+			compatible = "xiaomi,rosy-ft8613-csot";
+		};
+		qcom,mdss_dsi_ft8606m_boe_5p7_720p_video {
+			compatible = "xiaomi,rosy-ft8006m-boe";
+		};
+	};
+};
