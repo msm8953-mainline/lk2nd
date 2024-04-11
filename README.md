@@ -15,6 +15,7 @@ and then loaded by lk2nd.
 - SDM632
 
 ### Supported devices
+- 10or G (G)
 - Motorola Moto G4 Play (harpia)
 - Motorola Moto G5 Plus (potter)
 - Samsung Galaxy A3 (2015) - SM-A300FU

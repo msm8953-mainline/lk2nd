@@ -10,24 +10,26 @@
 	qcom,board-id= <0x2000b 0x0>;
 	qcom,pmic-id = <0x10016 0x10011 0x00 0x00>;
 
-	model = "10Or G";
-	compatible = "tenor,g", "qcom,msm8953", "lk2nd,device";
-	lk2nd,pstore = <0x9ff00000 0x100000>;
+	model = "10or G";
+	compatible = "10or,G", "qcom,msm8953", "lk2nd,device";
+	lk2nd,pstore = <0x9ff00000 0x300000>;
 	
 	panel {
-		
-			compatible = "tenor,g-panel";
+			compatible = "10or,G-panel";
 
 			qcom,mdss_dsi_hx8399c_auo_53_1080p_video {
-				compatible = "tenor,hx8399c_auo";
+				compatible = "10or,hx8399c_auo";
+				touchscreen-compatible = "edt,edt-ft5406";
 			};
 
 			qcom,mdss_dsi_ili7807d_djn_53_1080p_video {
-				compatible = "tenor,ili7807d_djn";
+				compatible = "10or,ili7807d_djn";
+				touchscreen-compatible = "goodix,gt917d";
 			};
 
 			qcom,mdss_dsi_ili7807d_djn_auo_53_1080p_video {
-				compatible = "tenor,ili7807d_djn_auo";
+				compatible = "10or,ili7807d_djn_auo";
+				touchscreen-compatible = "goodix,gt917d";
 			};
 
 		};
