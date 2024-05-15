@@ -26,6 +26,7 @@
 #include <arch.h>
 #include <arch/arm.h>
 #include <arch/defines.h>
+#include <arch/ops.h>
 #include <arch/arm/mmu.h>
 #include <platform.h>
 

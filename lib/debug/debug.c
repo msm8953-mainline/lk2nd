@@ -32,6 +32,7 @@
 #include <arch/ops.h>
 #include <platform.h>
 #include <platform/debug.h>
+#include <platform/timer.h>
 #include <kernel/thread.h>
 #include <kernel/timer.h>
 #include <rand.h>
