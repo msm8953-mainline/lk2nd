@@ -1,0 +1,12 @@
+/dts-v1/;
+
+/include/ "msm8953.dtsi"
+
+/ {
+	qcom,msm-id = <0x15f 0x00>;
+	qcom,board-id = <0x08 0x00>;
+	qcom,pmic-id = <0x10016 0x10011 0x00 0x00>;
+
+	model = "Lenovo Smart Tab M10 (tbx605f)";
+	compatible = "lenovo,tbx605f", "qcom,sdm450", "lk2nd,device";
+};

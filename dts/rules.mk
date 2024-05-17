@@ -22,6 +22,7 @@ DTBS += \
 	$(LOCAL_DIR)/msm8953-xiaomi-vince.dtb \
 	$(LOCAL_DIR)/msm8953-xiaomi-ysl.dtb \
 	$(LOCAL_DIR)/sdm450-htc-brepdugl.dtb \
+	$(LOCAL_DIR)/sdm450-lenovo-tbx605f.dtb \
 	$(LOCAL_DIR)/sdm450-samsung-r04.dtb \
 	$(LOCAL_DIR)/sdm450-samsung-r05.dtb \
 	$(LOCAL_DIR)/sdm450-xiaomi-rosy.dtb \
