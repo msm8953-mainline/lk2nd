@@ -29,6 +29,8 @@
 #include <arch.h>
 #include <platform.h>
 #include <target.h>
+#include <lib/bio.h>
+#include <lib/fs.h>
 #include <lib/heap.h>
 #include <kernel/thread.h>
 #include <kernel/timer.h>

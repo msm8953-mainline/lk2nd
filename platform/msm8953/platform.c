@@ -35,6 +35,7 @@
 #include <qtimer.h>
 #include <mmu.h>
 #include <arch/arm/mmu.h>
+#include <arch/defines.h>
 #include <smem.h>
 #include <board.h>
 #include <boot_stats.h>

@@ -18,6 +18,7 @@ and then loaded by lk2nd.
 - 10or G (G)
 - Motorola Moto G4 Play (harpia)
 - Motorola Moto G5 Plus (potter)
+- Motorola Moto G6 (ali) NOTE: Build with motorola-ali-secondary
 - Samsung Galaxy A3 (2015) - SM-A300FU
 - Samsung Galaxy A5 (2015) - SM-A500FU
 - Samsung Galaxy J5 (2016) - SM-J510FN

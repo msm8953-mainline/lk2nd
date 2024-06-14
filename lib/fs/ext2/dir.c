@@ -198,7 +198,7 @@ int ext2_lookup(ext2_t *ext2, const char *_path, inodenum_t *inum)
 // © 2019 Mis012 - SPDX-License-Identifier: GPL-3.0
 // from here till the end of file
 
-status_t ext2_open_directory(fscookie *cookie, const char *path, dircookie **dircookie) {
+status_t ext2_open_directory(fscookie *cookie, const char *path, dircookie **dcookie) {
 	off_t entry_len = 0;
 	ext2_dir_t *dir = malloc(sizeof(ext2_dir_t));
 	memset(dir, 0, sizeof(ext2_dir_t));
@@ -225,7 +225,7 @@ status_t ext2_open_directory(fscookie *cookie, const char *path, dircookie **dir
 	dir->offset = 0;
 	dir->length = entry_len;
 
-	*dircookie = dir;
+	*dcookie = (dircookie *) dir;
 
 	return 0;
 }
@@ -254,7 +254,7 @@ status_t ext2_read_directory(dircookie *dircookie, struct dirent *ent) {
 status_t ext2_close_directory(dircookie *dircookie) {
 	ext2_dir_t *dir = (ext2_dir_t *)dircookie;
 
-	ext2_close_file(dir->file);
+	ext2_close_file((filecookie *)dir->file);
 	free(dir);
 	return 0;
 }
