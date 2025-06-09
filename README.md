@@ -1,3 +1,6 @@
+# This project is not maintained
+It is recommended to use [msm8916-mainline/lk2nd](https://github.com/msm8916-mainline/lk2nd) instead. 
+
 # lk2nd
 lk2nd is a bootloader for Qualcomm MSM devices,
 based on the [CodeAurora Little Kernel fork](https://source.codeaurora.org/quic/la/kernel/lk/).
@@ -83,18 +86,3 @@ $ make TOOLCHAIN_PREFIX=arm-none-eabi- <SoC>-secondary
 
 Replace `TOOLCHAIN_PREFIX` with the path to your tool chain.
 `lk2nd.img` is built and placed into `build-<SoC>-secondary/lk2nd.img`.
-
-## Porting
-### To other devices with supported Socs
-- Add a simple device tree to `dts/`. You just need `model` and the
-  `qcom,msm-id`/`qcom,board-id` from downstream.
-
-### To other SoCs
-- Cherry-pick changes
-- Make some changes
-- Add secondary project config
-
-(TODO: Document this properly)
-
-## Contact
-Ping `minecrell`/`Mis012`/`uknown`/`gavodavo` on [`#postmarketos-mainline`](https://wiki.postmarketos.org/wiki/Matrix_and_IRC).
